@@ -14,7 +14,7 @@ class IdentificationService {
     GrailsApplication grailsApplication
 
     Map identifyDomains(Object domain) {
-        if (!grailsApplication.isArtefact(domain.class)) {
+        if (!grailsApplication.isArtefactOfType(DomainClassArtefactHandler.TYPE, domain.class)) {
             return [:]
         }
         recursiveDomainId(domain)
