@@ -7,7 +7,7 @@ import spock.lang.Specification
  * @author Noam Y. Tenne
  */
 @Mock(Person)
-class DomainIdsSpec extends Specification {
+class GrailsDomainIdsSpec extends Specification {
 
     def 'ID a domain'() {
         given:
