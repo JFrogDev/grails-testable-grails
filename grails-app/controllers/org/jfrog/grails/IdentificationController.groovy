@@ -1,4 +1,4 @@
-package testable
+package org.jfrog.grails
 
 import grails.converters.JSON
 import org.codehaus.groovy.grails.commons.DomainClassArtefactHandler
