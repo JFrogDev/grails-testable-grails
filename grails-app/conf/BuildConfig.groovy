@@ -45,6 +45,12 @@ grails.project.dependency.resolution = {
             export = false
         }
 
-        test ':hibernate4:4.3.5.4' // or ":hibernate:3.6.10.16"
+        runtime (':hibernate4:4.3.5.5') {
+            export = false
+        } // or ":hibernate:3.6.10.16"
+        build (':tomcat:7.0.54') {
+            export = false
+        }
+        compile ':asset-pipeline:1.9.9'
     }
 }
