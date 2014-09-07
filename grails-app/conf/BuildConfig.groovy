@@ -35,8 +35,8 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.jboss.com/maven2/"
     }
     dependencies {
-        // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-        // runtime 'mysql:mysql-connector-java:5.1.27'
+        test 'org.seleniumhq.selenium:selenium-chrome-driver:2.42.2'
+        test 'org.gebish:geb-spock:0.9.3'
     }
 
     plugins {
@@ -52,5 +52,6 @@ grails.project.dependency.resolution = {
             export = false
         }
         compile ':asset-pipeline:1.9.9'
+        test ':geb:0.9.3'
     }
 }

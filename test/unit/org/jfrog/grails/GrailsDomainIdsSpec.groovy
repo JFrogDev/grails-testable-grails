@@ -14,6 +14,9 @@ class GrailsDomainIdsSpec extends Specification {
         def mal = new Person(name: 'Malcolm Reynolds').save(failOnError: true, flush: true)
 
         expect:
+        Person.findAll().first() == mal
+
+        and:
         DomainIds.domainId(mal) == [Person: mal.id]
     }
 }

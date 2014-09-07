@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
+    <title>Domain Identification</title>
     <style type="text/css" media="screen">
     #status {
         background-color: #eee;
@@ -86,7 +86,7 @@
     <g:form action="performIdentification">
         Domain to ID:
         <g:field name="domainToId" type="text"/>
-        <g:submitButton id="" name="idDomain" value="ID Domain"/>
+        <g:submitButton name="idDomain" value="ID Domain"/>
     </g:form>
 </div>
 </body>
